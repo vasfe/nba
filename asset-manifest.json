@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.14da6b60.chunk.css",
-    "main.js": "/static/js/main.0f81d3cd.chunk.js",
-    "main.js.map": "/static/js/main.0f81d3cd.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.de5f990d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.de5f990d.js.map",
-    "static/js/2.da905a0e.chunk.js": "/static/js/2.da905a0e.chunk.js",
-    "static/js/2.da905a0e.chunk.js.map": "/static/js/2.da905a0e.chunk.js.map",
-    "static/js/3.f21587e2.chunk.js": "/static/js/3.f21587e2.chunk.js",
-    "static/js/3.f21587e2.chunk.js.map": "/static/js/3.f21587e2.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.14da6b60.chunk.css.map": "/static/css/main.14da6b60.chunk.css.map",
-    "static/js/2.da905a0e.chunk.js.LICENSE.txt": "/static/js/2.da905a0e.chunk.js.LICENSE.txt"
+    "main.css": "/nba-games-viewer/static/css/main.14da6b60.chunk.css",
+    "main.js": "/nba-games-viewer/static/js/main.0f81d3cd.chunk.js",
+    "main.js.map": "/nba-games-viewer/static/js/main.0f81d3cd.chunk.js.map",
+    "runtime-main.js": "/nba-games-viewer/static/js/runtime-main.fa3c5165.js",
+    "runtime-main.js.map": "/nba-games-viewer/static/js/runtime-main.fa3c5165.js.map",
+    "static/js/2.da905a0e.chunk.js": "/nba-games-viewer/static/js/2.da905a0e.chunk.js",
+    "static/js/2.da905a0e.chunk.js.map": "/nba-games-viewer/static/js/2.da905a0e.chunk.js.map",
+    "static/js/3.f21587e2.chunk.js": "/nba-games-viewer/static/js/3.f21587e2.chunk.js",
+    "static/js/3.f21587e2.chunk.js.map": "/nba-games-viewer/static/js/3.f21587e2.chunk.js.map",
+    "index.html": "/nba-games-viewer/index.html",
+    "static/css/main.14da6b60.chunk.css.map": "/nba-games-viewer/static/css/main.14da6b60.chunk.css.map",
+    "static/js/2.da905a0e.chunk.js.LICENSE.txt": "/nba-games-viewer/static/js/2.da905a0e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.de5f990d.js",
+    "static/js/runtime-main.fa3c5165.js",
     "static/js/2.da905a0e.chunk.js",
     "static/css/main.14da6b60.chunk.css",
     "static/js/main.0f81d3cd.chunk.js"
