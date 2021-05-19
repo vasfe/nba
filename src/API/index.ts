@@ -1,3 +1,4 @@
+import { formatTime } from "../data";
 import { Game } from "../interface";
 
 export async function request(method: string, url: string, params = "") {
@@ -7,8 +8,7 @@ export async function request(method: string, url: string, params = "") {
         })
         return response.json()
     } catch (error) {
-        console.error(error);
-        console.log(`There has been a problem with your fetch operation: ${error.message}`);
+        console.log(`Issue with fetch: ${error.message}`);
     }
 }
 
@@ -24,7 +24,8 @@ export async function getDaysGames(date: string): Promise<Game[]> {
         const hTeamScore = game.hTeam.score
         const vTeamScore = game.vTeam.score
         const gameId = game.gameId
-        todaysGames.push({hTeam: {fullName:hTeamFullname, score: hTeamScore}, vTeam: {fullName: vTeamFullname, score: vTeamScore}, key:gameId})
+        const time = formatTime(game.startTimeUTC);
+        todaysGames.push({hTeam: {fullName:hTeamFullname, score: hTeamScore}, vTeam: {fullName: vTeamFullname, score: vTeamScore}, date:time, key:gameId})
     })
     return todaysGames
 }

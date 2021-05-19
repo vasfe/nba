@@ -11,10 +11,11 @@ export interface IAppState {
 export interface Game {
   vTeam: Team,
   hTeam: Team,
-  key: string
+  key: string,
+  date: string
 }
 
 interface Team {
   fullName: string,
-  score: number
+  score: string
 }

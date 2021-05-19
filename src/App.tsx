@@ -34,7 +34,7 @@ class App extends React.Component<IAppProps, IAppState>{
       this.getGames
     )
   }
-  showGamesView() {
+  games() {
     if (this.state.searching) {
       return (
         <div>
@@ -50,6 +50,7 @@ class App extends React.Component<IAppProps, IAppState>{
               vTeam={game.vTeam}
               hTeam={game.hTeam}
               key={game.key}
+              date={game.date}
             />
           )}
         </div>
@@ -62,23 +63,43 @@ class App extends React.Component<IAppProps, IAppState>{
         <h1>
           {this.props.title}
         </h1>
-        <div className="inline">
-          <button onClick={() => this.changeView(-1)} className="dateBtn" disabled={this.state.searching}>&#8678;</button>
-          <p className="date">{formatDate(this.state.currentDate)}</p>
-          <button onClick={() => this.changeView(1)} className="dateBtn" disabled={this.state.searching}>&#8680;</button></div>
-        <div className="centered">
-        </div>
-        {this.showGamesView()}
+        <button onClick={() => this.changeView(-1)} className="dateBtn" disabled={this.state.searching}>&#8678;</button>
+        <p className="date">{formatDate(this.state.currentDate)}</p>
+        <button onClick={() => this.changeView(1)} className="dateBtn" disabled={this.state.searching}>&#8680;</button>
+        {this.games()}
       </div>
     );
   }
 }
 
-function Card(props: Game) {
+const Card = (props: Game) => {
+  function score() {
+    if (props.hTeam.score == "") {
+      return (
+        <div className="start-time">{props.date}</div>
+      )
+    }
+    else {
+      return (
+        <div>
+          <div className="home score">{props.hTeam.score}</div>
+          <span>-</span>
+          <div className="away score">{props.vTeam.score}</div>
+        </div>
+      );
+    }
+  }
   return (
     <div className="card">
-      {props.hTeam.fullName} <span>vs</span> {props.vTeam.fullName}<br></br>
-      {props.hTeam.score} - {props.vTeam.score}
+      <div className="home team">
+        {props.hTeam.fullName}
+      </div>
+      <span>vs</span>
+      <div className="away team">
+        {props.vTeam.fullName}
+      </div>
+      <br></br>
+      {score()}
     </div>
   )
 }
