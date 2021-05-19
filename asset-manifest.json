@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/nba-games-viewer/static/css/main.14da6b60.chunk.css",
-    "main.js": "/nba-games-viewer/static/js/main.d97f5c2b.chunk.js",
-    "main.js.map": "/nba-games-viewer/static/js/main.d97f5c2b.chunk.js.map",
+    "main.css": "/nba-games-viewer/static/css/main.62ee9e91.chunk.css",
+    "main.js": "/nba-games-viewer/static/js/main.8d9254be.chunk.js",
+    "main.js.map": "/nba-games-viewer/static/js/main.8d9254be.chunk.js.map",
     "runtime-main.js": "/nba-games-viewer/static/js/runtime-main.fa3c5165.js",
     "runtime-main.js.map": "/nba-games-viewer/static/js/runtime-main.fa3c5165.js.map",
-    "static/js/2.da905a0e.chunk.js": "/nba-games-viewer/static/js/2.da905a0e.chunk.js",
-    "static/js/2.da905a0e.chunk.js.map": "/nba-games-viewer/static/js/2.da905a0e.chunk.js.map",
+    "static/js/2.a35361c1.chunk.js": "/nba-games-viewer/static/js/2.a35361c1.chunk.js",
+    "static/js/2.a35361c1.chunk.js.map": "/nba-games-viewer/static/js/2.a35361c1.chunk.js.map",
     "static/js/3.f21587e2.chunk.js": "/nba-games-viewer/static/js/3.f21587e2.chunk.js",
     "static/js/3.f21587e2.chunk.js.map": "/nba-games-viewer/static/js/3.f21587e2.chunk.js.map",
     "index.html": "/nba-games-viewer/index.html",
-    "static/css/main.14da6b60.chunk.css.map": "/nba-games-viewer/static/css/main.14da6b60.chunk.css.map",
-    "static/js/2.da905a0e.chunk.js.LICENSE.txt": "/nba-games-viewer/static/js/2.da905a0e.chunk.js.LICENSE.txt"
+    "static/css/main.62ee9e91.chunk.css.map": "/nba-games-viewer/static/css/main.62ee9e91.chunk.css.map",
+    "static/js/2.a35361c1.chunk.js.LICENSE.txt": "/nba-games-viewer/static/js/2.a35361c1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.fa3c5165.js",
-    "static/js/2.da905a0e.chunk.js",
-    "static/css/main.14da6b60.chunk.css",
-    "static/js/main.d97f5c2b.chunk.js"
+    "static/js/2.a35361c1.chunk.js",
+    "static/css/main.62ee9e91.chunk.css",
+    "static/js/main.8d9254be.chunk.js"
   ]
 }
