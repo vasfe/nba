@@ -7,6 +7,15 @@ export interface IAppState {
   games: Game[],
   currentDate: string
 }
+export interface Navigation {
+  navigation( direction:number) : void,
+  date: string,
+  disabled: boolean
+}
+
+export interface Games{
+  games: Game[];
+}
 
 export interface Game {
   vTeam: Team,

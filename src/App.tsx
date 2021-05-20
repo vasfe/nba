@@ -1,8 +1,11 @@
 import React from 'react';
 import './App.css';
-import { IAppState, Game, IAppProps } from './interface';
+import { IAppState, IAppProps } from './interface';
 import { getDaysGames } from './API'
-import { getDate, formatDate } from './data';
+import { getDate } from './data';
+import Card from './components/Cards/Card'
+import Nav from './components/Nav/Nav'
+
 import Loader from 'react-loader-spinner';
 
 class App extends React.Component<IAppProps, IAppState>{
@@ -37,14 +40,14 @@ class App extends React.Component<IAppProps, IAppState>{
   games() {
     if (this.state.searching) {
       return (
-        <div>
+        <div className="spinner" >
           <Loader type="Circles" color="white" height={80} width={80} />
         </div>
       )
     }
     else {
       return (
-        <div >
+        <div className="cards-container">
           {this.state.games.map(game =>
             <Card
               vTeam={game.vTeam}
@@ -60,47 +63,17 @@ class App extends React.Component<IAppProps, IAppState>{
   render() {
     return (
       <div className="App">
-        <h1>
+        <h1 className="title">
           {this.props.title}
         </h1>
-        <button onClick={() => this.changeView(-1)} className="dateBtn" disabled={this.state.searching}>&#8678;</button>
-        <p className="date">{formatDate(this.state.currentDate)}</p>
-        <button onClick={() => this.changeView(1)} className="dateBtn" disabled={this.state.searching}>&#8680;</button>
+        <Nav
+        navigation={this.changeView}
+        date={this.state.currentDate}
+        disabled={this.state.searching}
+        />
         {this.games()}
       </div>
     );
   }
-}
-
-const Card = (props: Game) => {
-  function score() {
-    if (props.hTeam.score == "") {
-      return (
-        <div className="start-time">{props.date}</div>
-      )
-    }
-    else {
-      return (
-        <div>
-          <div className="home score">{props.hTeam.score}</div>
-          <span>-</span>
-          <div className="away score">{props.vTeam.score}</div>
-        </div>
-      );
-    }
-  }
-  return (
-    <div className="card">
-      <div className="home team">
-        {props.hTeam.fullName}
-      </div>
-      <span>vs</span>
-      <div className="away team">
-        {props.vTeam.fullName}
-      </div>
-      <br></br>
-      {score()}
-    </div>
-  )
 }
 export default App;
