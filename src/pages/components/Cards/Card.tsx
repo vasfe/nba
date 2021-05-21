@@ -1,10 +1,9 @@
 import React from 'react';
-import { Game } from '../../interface';
+import { Game } from '../../../interface';
 import { StyledCard, StyledRow, HomeTeam, AwayTeam, Separator, GameDetails, StartTime } from './CardComponents';
 
-
 const Card = (props: Game) => {
-  function score() {
+  function gameDetails() {
     if (props.hTeam.score == "") {
       return (
         <GameDetails>
@@ -29,7 +28,7 @@ const Card = (props: Game) => {
         <Separator>vs</Separator>
         <AwayTeam>{props.vTeam.fullName}</AwayTeam>
       </StyledRow>
-      {score()}
+      {gameDetails()}
     </StyledCard>
   )
 }

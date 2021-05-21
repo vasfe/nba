@@ -2,11 +2,16 @@ export interface IAppProps {
   title: string
 }
 
-export interface IAppState {
-  searching: boolean,
+export interface GamesProps {
+  title: string
+}
+
+export interface GamesPageStates {
+  searching: boolean ,
   games: Game[],
   currentDate: string
 }
+
 export interface Navigation {
   navigation( direction:number) : void,
   date: string,
