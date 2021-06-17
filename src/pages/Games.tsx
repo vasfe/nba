@@ -47,10 +47,7 @@ class Games extends React.Component<GamesProps, GamesPageStates>{
           <GamesContainer>
             {this.state.games.map(game =>
               <Card
-                vTeam={game.vTeam}
-                hTeam={game.hTeam}
-                key={game.key}
-                date={game.date}
+              {...game}
               />
             )}
           </GamesContainer>
@@ -58,7 +55,7 @@ class Games extends React.Component<GamesProps, GamesPageStates>{
       }
       else {
         return (
-          <Message> No Games Today :(</Message>
+          <Message> No Game Found :(</Message>
         )
       }
     }
