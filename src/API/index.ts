@@ -19,18 +19,25 @@ export async function getDaysGames(date: string): Promise<Game[]> {
     const teams = await request("GET", `https://data.nba.net/10s/prod/v2/${season}/teams.json`)
     const daysGames = await request("GET", `https://data.nba.net/10s/prod/v1/${date}/scoreboard.json`)
     let todaysGames: Game[] = []
+    console.log(daysGames)
     daysGames.games.forEach((game: any) => {
+
+        console.log(game.playoffs)
+
         todaysGames.push(
             {
                 hTeam: {
                     fullName: teams.league.standard.filter((team: any) => team.teamId === game.hTeam.teamId)[0].fullName,
                     score: game.hTeam.score,
-                    seriesWin: game.playoffs.hTeam.seriesWin//change after playoffs
+                    seriesWin: ((game.playoffs != undefined) ? game.playoffs.hTeam.seriesWin : game.hTeam.seriesWin)
+
+                    //change after playoffs
                 },
                 vTeam: {
                     fullName: teams.league.standard.filter((team: any) => team.teamId === game.vTeam.teamId)[0].fullName,
                     score: game.vTeam.score,
-                    seriesWin: game.playoffs.vTeam.seriesWin//change after playoffs
+                    seriesWin: ((game.playoffs != undefined) ? game.playoffs.vTeam.seriesWin : game.vTeam.seriesWin)
+                    // game.playoffs.vTeam.seriesWin//change after playoffs
 
                 },
                 date: game.homeStartDate,
@@ -40,7 +47,7 @@ export async function getDaysGames(date: string): Promise<Game[]> {
                 startTimeTBD: game.isStartTimeTBD,
                 arena: `${game.arena.name}, ${game.arena.city} `,
                 isActiveGame: game.isGameActivated,
-                isEnded: ((game.endTimeUTC==undefined)? false: true)
+                isEnded: ((game.endTimeUTC == undefined) ? false : true)
 
             })
     })
@@ -52,7 +59,7 @@ export async function activeGameDetails(date: string, gameId: string): Promise<A
     return (
         {
             hTeamScore: game.hTeam.score,
-            vTeamScore:game.vTeam.score,
+            vTeamScore: game.vTeam.score,
             currentPeriod: game.period.current,
             isEndOfPeriod: game.period.isHalftime,
             isHalftime: game.period.isEndOfPeriod,

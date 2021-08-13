@@ -47,11 +47,11 @@ class Card extends React.Component<Game, ActiveGame>{
     return (
       <StyledRow>
         <LeftText>
-          <FurtherGameDetails>{this.props.hTeam.seriesWin}</FurtherGameDetails>
+          {/* <FurtherGameDetails>{this.props.hTeam.seriesWin}</FurtherGameDetails> */}
         </LeftText>
         <Separator>-</Separator>
         <RightText>
-          <FurtherGameDetails>{this.props.vTeam.seriesWin}</FurtherGameDetails>
+          {/* <FurtherGameDetails>{this.props.vTeam.seriesWin}</FurtherGameDetails> */}
         </RightText>
       </StyledRow>
     )
