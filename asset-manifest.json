@@ -1,22 +1,20 @@
 {
   "files": {
-    "main.css": "/nba-games-viewer/static/css/main.cc5b5edf.chunk.css",
-    "main.js": "/nba-games-viewer/static/js/main.242ae273.chunk.js",
-    "main.js.map": "/nba-games-viewer/static/js/main.242ae273.chunk.js.map",
-    "runtime-main.js": "/nba-games-viewer/static/js/runtime-main.194acfd5.js",
-    "runtime-main.js.map": "/nba-games-viewer/static/js/runtime-main.194acfd5.js.map",
-    "static/js/2.6c5457c4.chunk.js": "/nba-games-viewer/static/js/2.6c5457c4.chunk.js",
-    "static/js/2.6c5457c4.chunk.js.map": "/nba-games-viewer/static/js/2.6c5457c4.chunk.js.map",
-    "static/js/3.0afb2485.chunk.js": "/nba-games-viewer/static/js/3.0afb2485.chunk.js",
-    "static/js/3.0afb2485.chunk.js.map": "/nba-games-viewer/static/js/3.0afb2485.chunk.js.map",
+    "main.css": "/nba-games-viewer/static/css/main.7dbfb17c.chunk.css",
+    "main.js": "/nba-games-viewer/static/js/main.144062aa.chunk.js",
+    "main.js.map": "/nba-games-viewer/static/js/main.144062aa.chunk.js.map",
+    "runtime-main.js": "/nba-games-viewer/static/js/runtime-main.6f69415a.js",
+    "runtime-main.js.map": "/nba-games-viewer/static/js/runtime-main.6f69415a.js.map",
+    "static/js/2.23d237cc.chunk.js": "/nba-games-viewer/static/js/2.23d237cc.chunk.js",
+    "static/js/2.23d237cc.chunk.js.map": "/nba-games-viewer/static/js/2.23d237cc.chunk.js.map",
     "index.html": "/nba-games-viewer/index.html",
-    "static/css/main.cc5b5edf.chunk.css.map": "/nba-games-viewer/static/css/main.cc5b5edf.chunk.css.map",
-    "static/js/2.6c5457c4.chunk.js.LICENSE.txt": "/nba-games-viewer/static/js/2.6c5457c4.chunk.js.LICENSE.txt"
+    "static/css/main.7dbfb17c.chunk.css.map": "/nba-games-viewer/static/css/main.7dbfb17c.chunk.css.map",
+    "static/js/2.23d237cc.chunk.js.LICENSE.txt": "/nba-games-viewer/static/js/2.23d237cc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.194acfd5.js",
-    "static/js/2.6c5457c4.chunk.js",
-    "static/css/main.cc5b5edf.chunk.css",
-    "static/js/main.242ae273.chunk.js"
+    "static/js/runtime-main.6f69415a.js",
+    "static/js/2.23d237cc.chunk.js",
+    "static/css/main.7dbfb17c.chunk.css",
+    "static/js/main.144062aa.chunk.js"
   ]
 }
