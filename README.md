@@ -2,7 +2,7 @@
 
 The App exploits the data.nba.net API and shows all NBA games for a given date
 
-See on GH Pages [GH Pages](https://vasfe.github.io/nba-games/)
+See on [GH Pages](https://vasfe.github.io/nba-games/)
 
 ## Built With
 
