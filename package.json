@@ -1,7 +1,7 @@
 {
-  "name": "nba-games-viewer",
+  "name": "nba-games",
   "version": "0.1.0",
-  "homepage": "http://vasfe.github.io/nba-games-viewer",
+  "homepage": "http://vasfe.github.io/nba-games",
   "private": true,
   "dependencies": {
     "classnames": "^2.3.1",
