@@ -98,14 +98,14 @@ const Card = (props) => {
             <GameDetails>{((!props.startTimeTBD) ? props.time : 'TBD')}</GameDetails>
         </CenteredText>
         <CenteredText>
-            <FurtherGameDetails>{this.props.arena}</FurtherGameDetails>
+            <FurtherGameDetails>{props.arena}</FurtherGameDetails>
         </CenteredText>
         </>
 
     let activeGameDetails;
 
     if (props.isActiveGame){
-        <ActiveGameDetails>{`Q${this.state.currentPeriod} - ${this.state.clock}`}</ActiveGameDetails>
+        <ActiveGameDetails>{`Q${props.currentPeriod} - ${props.clock}`}</ActiveGameDetails>
     }
 
     return (
