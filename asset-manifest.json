@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/nba-games/static/css/main.7dbfb17c.chunk.css",
-    "main.js": "/nba-games/static/js/main.7122eae6.chunk.js",
-    "main.js.map": "/nba-games/static/js/main.7122eae6.chunk.js.map",
+    "main.js": "/nba-games/static/js/main.78249247.chunk.js",
+    "main.js.map": "/nba-games/static/js/main.78249247.chunk.js.map",
     "runtime-main.js": "/nba-games/static/js/runtime-main.261f946a.js",
     "runtime-main.js.map": "/nba-games/static/js/runtime-main.261f946a.js.map",
     "static/js/2.6d14960d.chunk.js": "/nba-games/static/js/2.6d14960d.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.261f946a.js",
     "static/js/2.6d14960d.chunk.js",
     "static/css/main.7dbfb17c.chunk.css",
-    "static/js/main.7122eae6.chunk.js"
+    "static/js/main.78249247.chunk.js"
   ]
 }
