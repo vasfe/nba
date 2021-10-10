@@ -13,14 +13,17 @@ const Date = styled(DatePicker)`
   background: transparent;
   color: white;
   border-radius: 5px;
-  width: 100px;
+  width: 110px;
   padding: 5px;
   font-size: 20px;
+  text-align: center;
 `;
 
 const NavButton = styled.button`
   margin: 10px;
-  font-size: 25px;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 5px 7px;
   background-color: #2d3038;
   color: white;
   border-radius: 20%;
