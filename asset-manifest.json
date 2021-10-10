@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/nba-app/static/css/main.7dbfb17c.chunk.css",
-    "main.js": "/nba-app/static/js/main.af424327.chunk.js",
-    "main.js.map": "/nba-app/static/js/main.af424327.chunk.js.map",
+    "main.js": "/nba-app/static/js/main.bf6a5fdf.chunk.js",
+    "main.js.map": "/nba-app/static/js/main.bf6a5fdf.chunk.js.map",
     "runtime-main.js": "/nba-app/static/js/runtime-main.44697e64.js",
     "runtime-main.js.map": "/nba-app/static/js/runtime-main.44697e64.js.map",
     "static/css/2.ecdd39c8.chunk.css": "/nba-app/static/css/2.ecdd39c8.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.ecdd39c8.chunk.css",
     "static/js/2.34e3426a.chunk.js",
     "static/css/main.7dbfb17c.chunk.css",
-    "static/js/main.af424327.chunk.js"
+    "static/js/main.bf6a5fdf.chunk.js"
   ]
 }
