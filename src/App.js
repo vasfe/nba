@@ -1,19 +1,23 @@
 import React from 'react';
 import './App.css';
-import Games from "./components/Games"
+import { Provider } from 'react-redux'
 import { Route, Switch, BrowserRouter } from "react-router-dom";
+import Navbar from './components/Navbar';
+import Stats from './pages/Stats';
+import Games from "./pages/Games"
+import store from './store/store'
 
 const App = () => {
   return (
-  //   <BrowserRouter basename={process.env.PUBLIC_URL}>
-  //   <Switch >
-  //     <Route exact path="/" component={Games} />
-  //   </Switch>
-  // </BrowserRouter>
-
-    <Games
-      title="NBA Games"
-    />
+    <Provider store={store}>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Navbar />
+        <Switch >
+          <Route exact path="/" component={Games} />
+          <Route exact path="/stats" component={Stats} />
+        </Switch>
+      </BrowserRouter>
+    </Provider>
   )
 }
 
